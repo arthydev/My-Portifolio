@@ -20,7 +20,8 @@ header .container nav{
     justify-content: right;
     width: 100%;
     background: rgba(145, 133, 232, 1);
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 nav a {
