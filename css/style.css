@@ -20,7 +20,8 @@ header .container nav{
     justify-content: right;
     width: 100%;
     background: rgba(145, 133, 232, 1);
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 nav a {
@@ -36,7 +37,7 @@ nav a:hover{
 
 main .container {
     width: 100%;
-    height: 93.5vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,8 +89,8 @@ main img:hover{
     color: white;
     border:1px solid black;
     transition: 0.5s;
-    box-shadow: 2px 2px black;
-    text-shadow: 2px 2px 1px black;
+    box-shadow: 3px 3px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .btn:hover{
@@ -140,6 +141,19 @@ main img:hover{
     letter-spacing: 3px;
     background: #FFF184;
     overflow:hidden;
+}
+
+.social {
+    margin-top: 35px;
+    filter: drop-shadow(3px 3px black);
+}
+
+.social a {
+    margin-right: 50px;
+}
+
+.social a:last-child{
+    margin-right: 0;
 }
 
 .skills .container{
@@ -269,8 +283,8 @@ main img:hover{
     }
 
     main .container p{
-        font-size: 15px;
-        width: 100%;
+        font-size: 16px;
+        width: 75%;
     }
 
     .title {
@@ -295,6 +309,22 @@ main img:hover{
         text-align:center;
         letter-spacing: 3px;
         background: #FFF184;
+    }
+
+    .social{
+        display:flex; 
+    }
+
+    .social a {
+        margin-right: 10px;
+    }
+
+    .social a:last-child{
+        margin-right: 0px;
+    }
+
+    .social img {
+        width: 100%;
     }
 
     .p-skills {
