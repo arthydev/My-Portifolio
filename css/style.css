@@ -18,15 +18,16 @@ body {
 header .container nav{
     display: flex;
     justify-content: right;
-    padding: 15px;
+    width: 100%;
     background: rgba(145, 133, 232, 1);
+    padding: 15px;
 }
 
 nav a {
     font-size: 20px;
     color: black;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav a:hover{
@@ -119,10 +120,9 @@ main img:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+    justify-content: center;
     width: 60%;
-    padding: 150px;
-    border-radius: 100px;
+    height: 50%;
     
 }
 
@@ -133,15 +133,19 @@ main img:hover{
     font-weight: 700;
 }
 
-.card .desc {
+.card .desc{
     width: 80%;
     font-size: 18px;
     text-align:center;
     letter-spacing: 3px;
+    background: #FFF184;
+    overflow:hidden;
 }
 
 .skills .container{
+    margin-top: 30px;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,11 +156,13 @@ main img:hover{
     font-size: 18px;
     letter-spacing: 3px;
     margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+    background: #FFF184;
 }
 
 .skills-box{
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center ;
@@ -167,10 +173,139 @@ main img:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 5%;
+    margin-right: 60px;
+}
+
+.langs:last-child{
+    margin-right: 0px;
 }
 
 .langs i {
     font-size: 45px;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px){
+
+    main img {
+        width: 30%;
+        height: auto;
+        border-radius: 59% 41% 64% 36% / 40% 58% 42% 60% ;
+        transition: 0.8s;
+        filter: drop-shadow(5px 5px black);
+    }
+
+    main img:hover{
+        border-radius: 28% 72% 22% 78% / 66% 43% 57% 34% ;
+        width: 45%;
+    }
+
+    main .nome {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    main .container p{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .card {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.0);
+        width: 100%;
+        height: 40%;
+        border-radius: 100px; 
+    }
+
+    .card .desc {
+        width: 100%;
+        font-size: 16px;
+        text-align:center;
+        letter-spacing: 3px;
+        background: #FFF184;
+    }
+
+    .p-skills {
+        width: 80%;
+    }
+    
+    .langs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+
+    main img {
+        width: 30%;
+        height: auto;
+        border-radius: 59% 41% 64% 36% / 40% 58% 42% 60% ;
+        transition: 0.8s;
+        filter: drop-shadow(5px 5px black);
+    }
+
+    main img:hover{
+        border-radius: 28% 72% 22% 78% / 66% 43% 57% 34% ;
+        width: 45%;
+    }
+
+    main .nome {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    main .container p{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .card {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.0);
+        width: 100%;
+        height: 100%;
+        border-radius: 100px; 
+    }
+
+    .card .desc {
+        width: 100%;
+        font-size: 18px;
+        text-align:center;
+        letter-spacing: 3px;
+        background: #FFF184;
+    }
+
+    .p-skills {
+        width: 100%;
+    }
+    
+    .langs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+    }
+    
 }
